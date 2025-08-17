@@ -624,3 +624,46 @@ body {
     text-align: center;
   }
 }
+
+/* Ye CSS tumhari style.css ke last me daal do */
+
+/* Mobile ke liye responsive fix */
+@media (max-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* extra side scroll band karega */
+  }
+
+  /* Menu / Navbar */
+  nav ul {
+    flex-direction: column;   /* menu items ek ke niche ek */
+    text-align: center;
+    gap: 10px;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  /* Headings / Text */
+  h1, h2, h3, p {
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  /* Images full screen ke hisaab se */
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: auto;
+  }
+
+  /* Projects / Cards */
+  .project-card {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
