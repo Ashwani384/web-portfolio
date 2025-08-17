@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Website</title>
+
+  <!-- Fonts (headline serif + clean sans) -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Icons (for social + share) -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Background layers -->
+<div class="page-bg"></div>
+<div class="icons" id="icons"></div>
+
+  <!-- Centered white card -->
+ 
+    <main class="card">
+    <header class="topbar">
+  <div class="brand">My Website</div>
+  <nav class="menu">
+    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact Me</a>
+  </nav>
+  <button class="hamburger" aria-label="menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+    <section id="Home" class="hero">
+      <div class="copy">
+        <h1>
+          "Hi, I'm Ashwani Chauhan- A passionate BCA Student<br/>
+          &amp; Aspiring Web Developer"
+        </h1>
+        <p>
+          I create clean, responsive, and user-friendly websites that blend creative with functionality.
+        </p>
+        <a class="cta" href="#">Download Resume</a>
+
+        <div class="social">
+          <span>Follow us</span>
+          <a href="#" aria-label="facebook"><i class="ri-facebook-fill"></i></a>
+          <a href="#" aria-label="twitter"><i class="ri-twitter-x-line"></i></a>
+           <a href="https://instagram.com" target="__ashwani__rajput__0" title="Instagram"><i class="ri-instagram-line"></i></a>
+        </div>
+      </div>
+
+      <div class="visual">
+        <!-- Decorative blobs -->
+        <span class="blob blob-tl" aria-hidden="true"></span>
+        <span class="blob blob-tr" aria-hidden="true"></span>
+        <span class="blob blob-bottom" aria-hidden="true"></span>
+
+        <!-- Photo inside an organic blob mask -->
+        <div class="blob-photo">
+          <img
+            src="Screenshot.png"
+            alt="Woman in mustard coat"
+            loading="eager"
+          />
+        </div>
+      </div>
+    </section>
+
+    <button class="share" aria-label="share">
+      <i class="ri-share-forward-line"></i>
+    </button>
+  </main>
+
+  <!-- About Section -->
+  <main class="card about-card" id="about">
+  <section class="hero">
+    <div class="copy">
+      <h1>About Me</h1>
+      <p>
+        I'm a BCA student with a passion for front-end development and design. I love building
+        visually appealing, user-friendly websites. In my free time I explore new technologies
+        and play video games.
+      </p>
+    </div>
+
+    <div class="visual">
+      <span class="blob blob-tl"></span>
+      <span class="blob blob-tr"></span>
+      <span class="blob blob-bottom"></span>
+
+      <div class="blob-photo">
+        <img
+          src="about.jpg"
+          alt="Team working"
+        />
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Skills -->
+    <section class="card" id="skills">
+      <h3>Skills</h3>
+      <div class="skills">
+        <div class="skill">
+          <h4>Technical Skills</h4>
+          <div class="bar-wrap"><span>HTML</span><div class="bar"><i style="width:95%"></i></div></div>
+          <div class="bar-wrap"><span>CSS</span><div class="bar"><i style="width:88%"></i></div></div>
+          <div class="bar-wrap"><span>JavaScript</span><div class="bar"><i style="width:80%"></i></div></div>
+          <div class="bar-wrap"><span>Java</span><div class="bar"><i style="width:70%"></i></div></div>
+        </div>
+        <div class="skill soft">
+          <h4>Soft Skills</h4>
+          <ul>
+            <li>Teamwork</li>
+            <li>Creativity</li>
+            <li>Problem Solving</li>
+            <li>Communication</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+  <!-- Projects Section -->
+<section class="project-section" id="projects">
+  <div class="project-card">
+    <div class="left">
+
+      <!-- Project One -->
+      <a href="project1.html" class="item">
+        <div class="number">1</div> Project One
+    </a>
+    
+    <!-- Project Two -->
+    <a href="project2.html" class="item">
+      <div class="number">2</div> Project Two
+    </a>
+    
+    <!-- Project Three -->
+    <a href="project3.html" class="item">
+      <div class="number">3</div> Project Three
+    </a>
+  
+  </div>
+
+  <div class="center">
+    <h1>   My Projects</h1>
+    <img src="project.jpg" alt="Projects">
+  </div>
+
+  <div class="right">
+    <!-- Project Four -->
+    <a href="project4.html" class="item">
+      <div class="number">4</div> Project Four
+    </a>
+
+    <!-- Project Five -->
+    <a href="project5.html" class="item">
+      <div class="number">5</div> Project Five
+    </a>
+
+    <!-- Project Six -->
+    <a href="project6.html" class="item">
+      <div class="number">6</div> Project Six
+    </a>
+  </div>
+</section>
+
+  <!-- Contact Section -->
+  <form class="contact-form" id="contact" onsubmit="showSuccess(event)">
+    <h1>Contact Me</h1>
+    <h2>Let's Work Together💬</h2>
+    <p>I'm always open to discussing new project or creative ideas. </p>
+    <input type="email" placeholder="✉️Email" required>
+    <input type="text" placeholder="👤Your Name" required>
+    <textarea placeholder="✍️Message" required></textarea>
+    <button type="submit">Send Message</button>
+    <div class="success-message" id="successMsg">✅ Successfully Sent!</div>
+</form>
+
+<script>
+function showSuccess(event) {
+    event.preventDefault(); // Stop form from reloading page
+    const msg = document.getElementById("successMsg");
+    msg.style.display = "block";
+
+    // Hide after 2s
+    setTimeout(() => {
+        msg.style.display = "none";
+    }, 2000);
+
+    // Clear fields
+    event.target.reset();
+}
+</script>
+
+  <footer>
+  <div class="social-links">
+    <a href="https://facebook.com" target="Aswani Rajput" title="Facebook">
+      <i class="fab fa-facebook-f"></i>
+    </a>
+    <a href="https://github.com" target="Ashwani38" title="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://instagram.com" target="__ashwani__rajput__0" title="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+    <a href="https://mail.google.com/mail/u/0/" target="ashwanirajput168@gmail.com" title="Email">
+      <i class="fas fa-envelope"></i>
+    </a>
+  </div>
+  <p class="copyright">© 2025 Your Name. All rights reserved.</p>
+</footer>
+
+<!-- Font Awesome CDN for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+
+  <script>
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
+</script>
+
+<script>
+  // Generate floating coding icons
+  const iconsContainer = document.getElementById('icons');
+  const codingIcons = ['<i class="ri-html5-fill"></i>', '<i class="ri-css3-fill"></i>', '<i class="ri-javascript-fill"></i>', '<i class="ri-code-s-slash-line"></i>', '<i class="ri-terminal-box-fill"></i>'];
+
+  for(let i = 0; i < 20; i++) {
+    const span = document.createElement('span');
+    span.classList.add('icon');
+    span.innerHTML = codingIcons[Math.floor(Math.random() * codingIcons.length)];
+    span.style.left = Math.random() * 100 + 'vw';
+    span.style.animationDuration = (5 + Math.random() * 10) + 's';
+    span.style.fontSize = (1 + Math.random() * 2) + 'rem';
+    iconsContainer.appendChild(span);
+  }
+</script>
+
+
+
+
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project One - Solar System Explorer</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #222;
+      margin-bottom: 15px;
+    }
+    p {
+      color: #444;
+    }
+    .preview img {
+      width: 100%;
+      border-radius: 8px;
+      margin: 25px 0;
+    }
+    h2 {
+      margin-top: 40px;
+      color: #333;
+    }
+    pre {
+      background: #272822;
+      color: #f8f8f2;
+      padding: 18px;
+      border-radius: 6px;
+      overflow-x: auto;
+      margin-top: 15px;
+      font-size: 15px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 14px 25px;
+      margin-top: 30px;
+      background: #ff9800;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      margin: 0 auto;
+      background: #e68900;
+    }
+
+    /* Animated gradient background */
+    .page-bg {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: linear-gradient(270deg, #1a2a6c, #b21f1f, #fdbb2d);
+      background-size: 600% 600%;
+      animation: gradientBG 15s ease infinite;
+      z-index: -2;
+    }
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+  </style>
+</head>
+<body>  
+  <div class="container">
+    <!-- Project Title -->
+</head>
+<body>
+  <!-- Background layers -->
+  <div class="page-bg"></div>
+  <div class="icons" id="icons"></div>
+  <div class="container">
+
+    <!-- Preview Image -->
+    <div class="preview">
+      <h1>How to Create a Solar System Explorer using HTML and CSS</h1>
+      <h2>By Ashwani Chauhan</h2>
+      <img src="solar.png" alt="Solar System Project Preview">
+      <p>Let’s create a<b> Solar System Explorer</b> using just <b>HTML and CSS!</b> 🪐🌞✨ This project visually represents planets orbiting the sun, giving users an interactive way to explore our solar system – all with simple code and cool animations.</p>
+      <h4>We'll uses:</h4>
+      <h3>* <b>HTML</b> to structure the sun and planets.</h3>
+      <h3>* <b>CSS</b> to style the orbits, animated rotation, and create a glowing space vibe.</h3>
+      <p>With clever use of @keyframes, transform, and positioning, we can simulate the planets’ motion and orbit paths – no JavaScript needed!</p>
+      <h1>HTML</h1>
+      <P>This HTML code creates a CSS-only Solar System Explorer where each planet is a radio button styled with a label showing its name and distance from the Sun. When a planet is selected, its info appears with smooth visual transitions (handled in the linked CSS). There’s no JavaScript—everything is interactive through CSS, making it a lightweight and creative planetary UI.</P>
+    </div>
+
+    <!-- HTML Code -->
+    <h2>HTML Code:</h2>
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title>Solar System Explorer&lt;/title&gt;
+  &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;div class="solar-system"&gt;
+  &lt;div class="planet mercury"&gt;&lt;/div&gt;
+  &lt;div class="planet venus"&gt;&lt;/div&gt;
+  &lt;div class="planet earth"&gt;&lt;/div&gt;
+  &lt;div class="planet mars"&gt;&lt;/div&gt;
+&lt;/div&gt;
+    </pre>
+
+    <!-- CSS Code -->
+    <h2>CSS Code:</h2>
+    <p>This CSS styles a 3D Solar System Explorer using only HTML and CSS. It sets up a rotating 3D view (.solar_systm) with planets styled as circular elements, each with a unique texture and position. Clicking a planet (radio input) reveals its info panel, enhanced with transitions, shadows, and hover effects. Backgrounds for planets use real or fictional planet textures, and the layout is made interactive and visually rich without any JavaScript, relying purely on animations, transforms, and absolute positioning.</p>
+    <p>In short, the Solar System Explorer project is a creative way to learn animation and interactivity using HTML, CSS – while bringing outer space right into your browser! 🌌🚀</p>
+
+
+    <pre>
+body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #222;
+      margin-bottom: 15px;
+    }
+    p {
+      color: #444;
+    }
+    .preview img {
+      width: 100%;
+      border-radius: 8px;
+      margin: 25px 0;
+    }
+    h2 {
+      margin-top: 40px;
+      color: #333;
+    }
+    pre {
+      background: #272822;
+      color: #f8f8f2;
+      padding: 18px;
+      border-radius: 6px;
+      overflow-x: auto;
+      margin-top: 15px;
+      font-size: 15px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 14px 25px;
+      margin-top: 30px;
+      background: #ff9800;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      margin: 0 auto;
+      background: #e68900;
+    }
+  </style>
+</head>
+<body>
+    
+</pre>
+
+    <!-- Live Demo Button -->
+    <a href="view2.html" target="_blank" class="btn">🚀 Live Demo</a>
+  </div>
+
+  <!-- Font Awesome CDN for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+  <script>
+  // Generate floating coding icons
+  const iconsContainer = document.getElementById('icons');
+  const codingIcons = ['<i class="ri-html5-fill"></i>', '<i class="ri-css3-fill"></i>', '<i class="ri-javascript-fill"></i>', '<i class="ri-code-s-slash-line"></i>', '<i class="ri-terminal-box-fill"></i>'];
+
+  for(let i = 0; i < 20; i++) {
+    const span = document.createElement('span');
+    span.classList.add('icon');
+    span.innerHTML = codingIcons[Math.floor(Math.random() * codingIcons.length)];
+    span.style.left = Math.random() * 100 + 'vw';
+    span.style.animationDuration = (5 + Math.random() * 10) + 's';
+    span.style.fontSize = (1 + Math.random() * 2) + 'rem';
+    iconsContainer.appendChild(span);
+  }
+</script>
+</body>
+</html>
