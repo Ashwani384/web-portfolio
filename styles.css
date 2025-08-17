@@ -548,3 +548,79 @@ footer p {
       box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     }
   
+/* Default (Desktop) */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.card {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.hamburger {
+  display: none; /* desktop me hide */
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #333;
+  border-radius: 2px;
+}
+
+/* ✅ Mobile Responsive */
+@media (max-width: 768px) {
+  .menu {
+    display: none; /* default: hide */
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: white;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+  }
+
+  .menu.active {
+    display: flex; /* toggle se show */
+  }
+
+  .hamburger {
+    display: flex; /* mobile me show */
+  }
+
+  .hero {
+    flex-direction: column; /* text upar, image niche */
+    text-align: center;
+  }
+
+  .visual img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .skills, .project-section {
+    flex-direction: column;
+    text-align: center;
+  }
+}
